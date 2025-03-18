@@ -1,0 +1,19 @@
+.background {
+    background-image: url('/public/shared/MHCEG-numbers.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.layer {
+    background-color: rgba(0, 255, 255, 0.378);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+}

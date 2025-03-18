@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-xxl font-bold
+    }
+
+    h2 {
+        @apply text-xl font-semibold
+    }
+    h3 {
+        @apply text-lg font-semibold
+    }
+
+    p {
+        @apply text-base    
+    }
+
+    section {
+        @apply p-10
+    }
+
+
+}
+.df{
+    background-color: #217d829e;
+}
