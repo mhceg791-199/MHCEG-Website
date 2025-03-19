@@ -1,7 +1,7 @@
 import React from "react";
 import generateSlug from "../../../context/Functions/generateSlug";
 import { Link } from "react-router-dom";
-
+import "./sustainabilityItems.css";
 function SustainabilityItems() {
   const Suctainability = [
     {
@@ -47,7 +47,8 @@ function SustainabilityItems() {
         {Suctainability.map(({ image, title, paragraph, link }, index) => (
           <div
             key={index}
-            className="flex flex-col  rounded-2xl  bg-mainColor text-white  "
+            data-aos="zoom-out-down"  
+            className="flex flex-col  rounded-2xl animation  bg-mainColor text-white  "
           >
             <div className="p-4">
               <h3 className="text-lg font-semibold my-4">{title}</h3>

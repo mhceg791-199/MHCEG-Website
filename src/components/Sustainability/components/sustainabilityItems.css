@@ -1,0 +1,8 @@
+.animation:hover {
+    transform:  translateY(-3%) !important;
+    transition: 0.5s !important;
+}
+
+.animation{
+    transition: 0.5s !important;
+}
