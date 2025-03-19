@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import "./MHCEG-Numbers.css";
-import useCountUp from "../../../Hooks/useCountUp.jsx";
+import useCountUp from "../../../hooks/useCountUp";
 
 function MHCEG_Numbers() {
   const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
