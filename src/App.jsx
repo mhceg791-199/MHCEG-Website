@@ -21,7 +21,6 @@ import CareerModelProvider from "./context/careerContext";
 import SustainabilityContextProvider from "./context/sustainabilityContext";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 function App() {
-  
   const route = [
     { path: "/", element: <Home /> },
     { path: "/about", element: <About /> },
@@ -41,6 +40,8 @@ function App() {
       easing: "ease-in-out", // Easing function
     });
   }, []);
+  console.log(document.documentElement.scrollWidth, window.innerWidth);
+
   return (
     <>
       <SustainabilityContextProvider>

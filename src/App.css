@@ -27,3 +27,8 @@
 .df{
     background-color: #217d829e;
 }
+
+html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }

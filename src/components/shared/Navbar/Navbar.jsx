@@ -286,7 +286,7 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="w-full max-w-none  py-2 fixed top-0 left-0 !z-[99999] !bg-opacity-100 bg-white border-none !text-black shadow-md rounded-none ">
+    <Navbar className="w-full overflow-hidden  py-2 fixed top-0 left-0 !z-[99999] !bg-opacity-100 bg-white border-none !text-black shadow-md rounded-none ">
       <div className="w-11/12 m-auto">
         <div className="flex items-center justify-between text-blue-gray-900">
           <img
