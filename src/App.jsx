@@ -20,6 +20,7 @@ import Career from "./components/Career/Career";
 import CareerModelProvider from "./context/careerContext";
 import SustainabilityContextProvider from "./context/sustainabilityContext";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
+import NavbarContextProvider from "./context/NavbarContext";
 function App() {
   const route = [
     { path: "/", element: <Home /> },
@@ -40,21 +41,22 @@ function App() {
       easing: "ease-in-out", // Easing function
     });
   }, []);
-  console.log(document.documentElement.scrollWidth, window.innerWidth);
 
   return (
     <>
-      <SustainabilityContextProvider>
-        <CareerModelProvider>
-          <Layout>
-            <Routes>
-              {route.map((rout, index) => (
-                <Route key={index} path={rout.path} element={rout.element} />
-              ))}
-            </Routes>
-          </Layout>
-        </CareerModelProvider>
-      </SustainabilityContextProvider>
+      <NavbarContextProvider>
+        <SustainabilityContextProvider>
+          <CareerModelProvider>
+            <Layout>
+              <Routes>
+                {route.map((rout, index) => (
+                  <Route key={index} path={rout.path} element={rout.element} />
+                ))}
+              </Routes>
+            </Layout>
+          </CareerModelProvider>
+        </SustainabilityContextProvider>
+      </NavbarContextProvider>
     </>
   );
 }

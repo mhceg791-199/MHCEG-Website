@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Navbar,
   Collapse,
@@ -36,6 +36,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { Link, useNavigate } from "react-router-dom";
 import generateSlug from "../../../context/Functions/generateSlug";
+import { navbarContext } from "../../../context/NavbarContext";
 // console.log("hello");
 
 const aboutListMenuItems = [
@@ -136,10 +137,11 @@ const sustainabilityListMenuItems = [
 ];
 
 function NavListMenu({ ListMenuItems, headTitle }) {
-  const handleNavigate = (pageName, section) => {
-    console.log(pageName);
+  const { openNav, setOpenNav } = useContext(navbarContext);
 
+  const handleNavigate = (pageName, section) => {
     navigate(pageName, { state: { scrollTo: section } });
+    setOpenNav(false);
   };
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -276,8 +278,8 @@ function NavList() {
 }
 
 export function NavbarWithMegaMenu() {
-  const [openNav, setOpenNav] = React.useState(false);
-
+  // const [openNav, setOpenNav] = React.useState(false);
+  const { openNav, setOpenNav } = useContext(navbarContext);
   React.useEffect(() => {
     window.addEventListener(
       "resize",
