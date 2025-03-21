@@ -30,7 +30,6 @@ function CareerForm() {
       .email("Invalid email address")
       .required("Email is required"),
     message: Yup.string().required("Message is required"),
-    position: Yup.string().required("position is required"),
     cv: Yup.mixed()
       .required("A CV is required")
       .test(
@@ -50,7 +49,6 @@ function CareerForm() {
     initialValues: {
       firstName: "",
       lastName: "",
-      position: "",
       phone: "",
       email: "",
       message: "",
@@ -65,14 +63,14 @@ function CareerForm() {
 
       formdata.append("firstName", firstName);
       formdata.append("lastName", lastName);
-      formdata.append("position", position);
       formdata.append("phone", phone);
       formdata.append("email", email);
       formdata.append("message", message);
       formdata.append("cv", cv);
+      formdata.append("websiteName", "MHCEG");
 
       const { data } = await axios.post(
-        "https://mhc-backend.vercel.app/v1/api/candidate",
+        " http://wolsey.ca/api/candidate",
         formdata
       );
       toast.success("Application Sent Successfully!", {
@@ -154,7 +152,7 @@ function CareerForm() {
         </div>
 
         {/* Industry dropdown */}
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <select
             id="position"
             name="position"
@@ -238,7 +236,7 @@ function CareerForm() {
             <option value="Runner" label="Runner" />
             <option value="Office Boy" label="Office Boy" />
           </select>
-        </div>
+        </div> */}
 
         {/* Message input */}
         <div className="mb-3">
@@ -248,7 +246,7 @@ function CareerForm() {
             onChange={formik.handleChange}
             value={formik.values.message}
             className="bg-gray text-gray-900 text-base block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
-            placeholder="Why would you apply in the selected position?"
+            placeholder="Message"
             rows={6}
             required
           />

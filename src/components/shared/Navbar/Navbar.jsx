@@ -142,6 +142,7 @@ function NavListMenu({ ListMenuItems, headTitle }) {
   const handleNavigate = (pageName, section) => {
     navigate(pageName, { state: { scrollTo: section } });
     setOpenNav(false);
+    setIsMenuOpen(false);
   };
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
