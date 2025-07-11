@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import generateSlug from "../../../context/Functions/generateSlug";
 import { Link } from "react-router-dom";
 import "./sustainabilityItems.css";
+import { sustainabilityContext } from "../../../context/sustainabilityContext.jsx";
 function SustainabilityItems() {
+  const { sustainabilityDetails } = useContext(sustainabilityContext);
+
   const Suctainability = [
     {
       title: "Green Building Technologies",
@@ -44,26 +47,27 @@ function SustainabilityItems() {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 my-10 gap-14 px-4 sm:px-10 lg:px-20">
-        {Suctainability.map(({ image, title, paragraph, link }, index) => (
+        {sustainabilityDetails.map(({ img, title, text }, index) => (
           <div
             key={index}
-            data-aos="zoom-out-down"  
+            data-aos="zoom-out-down"
             className="flex flex-col  rounded-2xl animation  bg-mainColor text-white  "
           >
             <div className="p-4">
               <h3 className="text-lg font-semibold my-4">{title}</h3>
-              <p className="text-gray-700 mb-7">{paragraph}</p>
+              <p className="text-gray-700 mb-7">  {text[0].split(' ').slice(0, 18).join(' ')}...
+              </p>
             </div>
             <div className="w-full flex justify-center">
               <img
                 className="w-full h-[250px] object-cover"
-                src={image}
+                src={img}
                 alt={title}
               />
             </div>
 
             <Link
-              to={link}
+              to={`/sustainability/${generateSlug(title)}`}
               className="px-6 py-2  bg-white rounded-lg text-base  text-black self-center my-6"
             >
               Learn More

@@ -2,22 +2,17 @@ import React from "react";
 
 function WhyMHCEG() {
   const points = [
-    "Utilizes BIM, energy management, AIA standards, and 4D augmented reality.",
-    "Provides cloud-based 24-hour services.",
-    "Delivers solutions tailored to client goals.",
-    "Enhances strategic objectives and business performance.",
-    "Ensures exceptional.",
+    " Tailored Precision – Custom-engineered strategies that align with your unique project goals. ",
+    "Future-Ready Innovation – Leveraging AI, IoT, and sustainable practices to future-proof designs. ",
+    "Seamless Execution – From concept to completion, we optimize cost, time, and quality without compromise. ",
+    "Strategic Impact – Solutions designed to enhance ROI, operational resilience, and long-term growth. ",
   ];
   return (
     <>
       <section className="text-center">
         <h2>Why MHCEG ?</h2>
         <p className="md:w-1/2 w-full m-auto">
-          MHCEG Consultancy leverages advanced technology and an experienced
-          team to deliver tailored engineering solutions. They focus on
-          maximizing value, minimizing risks, and ensuring optimal results for
-          design and construction projects.
-        </p>
+          We don’t just meet industry standards, we redefine them. By integrating BIM, AI-driven analytics, 4D augmented reality, and cloud-based project management, we ensure real-time collaboration, risk mitigation, and unparalleled efficiency—24/7, anywhere in the world. At MHCEG, we turn projects into success stories.</p>
       </section>
       <section className="grid md:grid-cols-2 grid-cols-1">
         <div className="col-span-1 flex flex-col md:ps-10 p-0 justify-center">

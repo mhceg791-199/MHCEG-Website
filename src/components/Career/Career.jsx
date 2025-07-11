@@ -9,7 +9,7 @@ function Career() {
       <div className="grid md:grid-cols-2 grid-cols-1 md:w-3/4 w-full m-auto md:p-16 p-5 md:items-center">
         <div className="col-span-1 text-mainColor">
           <p className="text-xxxl font-semibold leading-10">
-            Join Our Team of Visionary Engineers
+            Join Our Team of Visionary Engineers 
           </p>
         </div>
         <div className="col-span-1">

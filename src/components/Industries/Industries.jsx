@@ -20,25 +20,25 @@ function Industries() {
   useScrollToSection(refs);
   const industries = [
     {
-      title: "Structural & Architectural Engineering",
+      title: "Architecture & Structural Engineering ",
       paragraph:
-        "We design innovative, resilient buildings with advanced structural analysis for high-rise, industrial, and seismic-resistant projects.",
+        "We design innovative, resilient structures from high-rises to seismic-resistant projects blending aesthetic vision with advanced engineering precision. ",
       image: "/industries/1.webp",
       type: "1",
       sectionName: structural,
     },
     {
-      title: "Urban Planning & Infrastructure",
+      title: "Urban Design & Infrastructure",
       paragraph:
-        "Our smart city and transport solutions enhance urban growth with efficient roads, bridges, and flood resilience systems",
+        "Our smart city solutions optimize urban growth through efficient transportation networks, resilient bridges, and flood-resistant infrastructure. ",
       image: "/industries/2.webp",
       type: "2",
       sectionName: urban,
     },
     {
-      title: "Energy & Industrial Solutions",
+      title: "Energy & Power Generation",
       paragraph:
-        "We optimize renewable energy, power grids, and industrial facilities for sustainability and high-performance efficiency",
+        "We deliver renewable energy systems and grid optimizations that balance sustainability with high-performance efficiency. ",
       image: "/industries/3.webp",
       type: "1",
       sectionName: energy,
@@ -46,15 +46,15 @@ function Industries() {
     {
       title: " Oil & Gas Engineering",
       paragraph:
-        "We deliver pipeline, facility, and automation solutions, ensuring safety, compliance, and operational excellence.",
+        "Specialized pipeline, facility, and automation solutions ensure operational excellence, safety, and regulatory compliance. ",
       image: "/industries/4.webp",
       type: "2",
       sectionName: oil,
     },
     {
-      title: "Environmental & Sustainability Consulting",
+      title: "Sustainability & Green Solutions ",
       paragraph:
-        "We implement carbon reduction, green certifications, and smart energy systems for eco-efficient, future-ready developments.",
+        "Carbon reduction strategies, green certifications, and smart energy systems drive eco-efficient, future-ready developments. ",
       image: "/industries/5.webp",
       type: "1",
       sectionName: environmental,

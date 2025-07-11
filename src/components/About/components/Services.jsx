@@ -6,29 +6,27 @@ function Services() {
       <h2 className="text-center mt-10 mb-2">OUR SERVICIES</h2>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-20 px-10 mb-10">
         <div className="flex flex-col justify-center">
-          <h3 className="mt-9 mb-1">Our Commitment to Innovation</h3>
+          <h3 className="mt-9 mb-2">Comprehensive Service Offerings </h3>
+          <ol className="list-disc list-inside text-gray-800 space-y-2">
+            <li>Architecture Engineering – Visionary designs that balance functionality, aesthetics, and sustainability. </li>
+            <li>Urban Design – Strategic planning to shape dynamic, livable, and resilient cities. </li>
+            <li>Landscape Design – Harmonious outdoor spaces that enhance environmental and social value. </li>
+            <li>Structural Design – Robust, innovative frameworks ensuring safety and longevity. </li>
+            <li>Infrastructure – Future-ready systems supporting urban and industrial growth.</li>
+            <li>Transportation – Smart, efficient mobility solutions for seamless connectivity. </li>
+            <li>Power Generation – Sustainable energy systems driving progress and reliability. </li>
+            <li>Oil & Gas – Precision-engineered solutions for complex industrial demands. </li>
+          </ol>
+
+          <h3 className="mt-9 mb-2">Project Leadership & Execution </h3>
+          <ol className="list-disc list-inside text-gray-800 space-y-2">
+            <li>Project Management – End-to-end oversight ensuring seamless delivery, from concept to completion. </li>
+            <li>Construction Supervision – Rigorous quality control and compliance for flawless execution. </li>
+          </ol>
+
+          <h3 className="mt-9 mb-1">Safety & Efficiency at the Core </h3>
           <p>
-            At MHCEG Consultancy, we are dedicated to delivering cutting-edge
-            engineering solutions that drive efficiency and sustainability. Our
-            innovative approach ensures that every project benefits from the
-            latest technological advancements, optimizing both performance and
-            longevity.
-          </p>
-          <h3 className="mt-9 mb-1">Safety and Efficiency at the Core</h3>
-          <p>
-            We prioritize safety and efficiency in every aspect of our work. Our
-            expert engineers meticulously design and implement solutions that
-            not only meet but exceed industry standards, ensuring the highest
-            levels of reliability and functionality.
-          </p>
-          <h3 className="mt-9 mb-1">Expert Project Management</h3>
-          <p>
-            Our expert project management team oversees every phase of a
-            project, from planning to execution, guaranteeing seamless
-            integration and successful outcomes. With a focus on precision and
-            excellence, we ensure that our clients receive the best engineering
-            solutions tailored to their unique needs.
-          </p>
+            Every solution prioritizes safety, precision, and industry-leading standards, guaranteeing reliability while exceeding client expectations. Our commitment to innovation and excellence ensures transformative outcomes for every project. </p>
           <div className="md:my-4 my-2">
             {/* <button className="bg-mainColor text-base px-5 py-2 text-white rounded-lg ">
               Learn More

@@ -4,39 +4,39 @@ function Values() {
   const values = [
     {
       image: "/about/values/1.webp",
-      title: "Excellence & Innovation",
+      title: "Excellence & Expertise",
       paragraph:
-        "Modern architecture, futuristic engineering, innovative building design, cutting-edge technology in construction",
+        "Mastery in modern architecture, precision engineering, and innovative construction techniques defines our work. We blend artistry with technical rigor to deliver iconic, future-ready structures.",
     },
     {
       image: "/about/values/2.webp",
-      title: "Structural Integrity",
+      title: "Safety & Structural Integrity",
       paragraph:
-        "Strong building structures, artistic architecture, balance of strength and beauty, iconic modern buildings",
+        "Every design prioritizes resilience, marrying aesthetic brilliance with uncompromising safety standards to withstand the test of time.",
     },
     {
       image: "/about/values/3.webp",
-      title: "Integrity & Professionalism ",
+      title: "Professionalism & Integrity",
       paragraph:
-        "Handshake in construction, ethical business practices, transparent teamwork, professional engineering team",
+        "Ethical practices, accountability, and a dedication to sustainable development guide our interactions, ensuring projects are executed with unwavering integrity. ",
     },
     {
       image: "/about/values/4.webp",
       title: "Sustainable Design",
       paragraph:
-        "We prioritize sustainability, integrating energy-efficient materials, passive design strategies, and green building practices to minimize environmental impact.",
+        "We champion eco-conscious solutions by harnessing energy-efficient materials, passive design strategies, and green building practices to minimize environmental impact while maximizing functionality.",
     },
     {
       image: "/about/values/5.webp",
-      title: "Collaborative Success",
+      title: "Client Focus & Collaborative Success",
       paragraph:
-        "Through collaboration, we cultivate strong partnerships with clients, architects, and industry leaders, ensuring seamless execution, design cohesion, and long-term success.",
+        "Through transparent communication and tailored solutions, we build trust and foster long-term partnerships, ensuring projects align with client aspirations and community needs. ",
     },
     {
       image: "/about/values/6.webp",
-      title: "Visionary Architecture",
+      title: "Innovation & Visionary Architecture",
       paragraph:
-        "We push creative boundaries, crafting forward-thinking designs that shape inspiring, future-ready spaces.",
+        "We challenge conventions, embracing advanced technologies and forward-thinking design to create spaces that inspire, adapt, and endure.",
     },
   ];
 

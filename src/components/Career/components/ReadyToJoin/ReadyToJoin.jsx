@@ -12,14 +12,10 @@ function ReadyToJoin() {
       <div className="bg-mainColor my-5 text-white py-8">
         <div className="  w-3/4 m-auto">
           <h2 className="text-mainBrown text-center font-semibold custom-text-xl">
-            Ready to Join Us?
+            Ready to Build Tomorrow?
           </h2>
           <p className="text-center mt-5">
-            If you’re inspired to shape the future with a team that values
-            ambition, excellence, and professional growth, MHCEG is the place
-            to elevate your career. Explore our current opportunities and join a
-            company that invests in your potential to drive industry evolution.
-          </p>
+            If you’re driven by excellence and eager to leave your mark on the built environment, explore our opportunities. At MHCEG, we invest in your potential, empower your ambition, and champion your journey to redefine engineering excellence.</p>
           <div className="text-center mt-5">
             <button
               onClick={() => {

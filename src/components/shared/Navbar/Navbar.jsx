@@ -192,15 +192,13 @@ function NavListMenu({ ListMenuItems, headTitle }) {
                 {headTitle.text}
                 <ChevronDownIcon
                   strokeWidth={2.5}
-                  className={`hidden h-3 w-3 transition-transform lg:block ${
-                    isMenuOpen ? "rotate-180" : ""
-                  }`}
+                  className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
+                    }`}
                 />
                 <ChevronDownIcon
                   strokeWidth={2.5}
-                  className={`block h-3 w-3 transition-transform lg:hidden ${
-                    isMobileMenuOpen ? "rotate-180" : ""
-                  }`}
+                  className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
+                    }`}
                 />
               </ListItem>
             </Typography>{" "}
@@ -240,14 +238,14 @@ function NavList() {
       />
       <NavListMenu
         headTitle={{
-          text: "industries",
+          text: "Industries",
           link: "/industries",
         }}
         ListMenuItems={industryListMenuItems}
       />
       <NavListMenu
         headTitle={{
-          text: "Sustainability & Innovatio",
+          text: "Sustainability",
           link: "/sustainability",
         }}
         ListMenuItems={sustainabilityListMenuItems}
@@ -271,7 +269,7 @@ function NavList() {
         className="font-medium"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Contact Us
+          Contact
         </ListItem>
       </Typography>
     </List>
@@ -292,11 +290,14 @@ export function NavbarWithMegaMenu() {
     <Navbar className="w-full overflow-hidden max-w-none py-2 fixed top-0 left-0 !z-[99999] !bg-opacity-100 bg-white border-none !text-black shadow-md rounded-none ">
       <div className="w-11/12 m-auto">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <img
-            className="w-[40%] md:w-[12%]"
-            src="/shared/logo2.png"
-            alt="MHCEG logo"
-          />
+          <Link to="/" className="block">
+            <img
+              className="w-[40%] md:w-[25%] lg:w-[30%] xl:w-[20%]"
+              src="/shared/logo2.png"
+              alt="MHCEG logo"
+            />
+          </Link>
+
           <div className="hidden lg:block">
             <NavList />
           </div>
@@ -314,6 +315,7 @@ export function NavbarWithMegaMenu() {
             )}
           </IconButton>
         </div>
+
         <Collapse open={openNav}>
           <NavList />
         </Collapse>
