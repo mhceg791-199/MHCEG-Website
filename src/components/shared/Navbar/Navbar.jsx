@@ -119,11 +119,11 @@ const sustainabilityListMenuItems = [
     icon: CloudIcon, // Represents air quality and carbon footprint
     pageName: `/sustainability/${generateSlug("Carbon Reduction Programs")}`,
   },
-  {
-    title: "Digital Twin & BIM Modeling",
-    icon: CubeTransparentIcon, // Represents 3D modeling and digital twin
-    pageName: `/sustainability/${generateSlug("Digital Twin & BIM Modeling")}`,
-  },
+  // {
+  //   title: "Digital Twin & BIM Modeling",
+  //   icon: CubeTransparentIcon, // Represents 3D modeling and digital twin
+  //   pageName: `/sustainability/${generateSlug("Digital Twin & BIM Modeling")}`,
+  // },
   {
     title: "Renewable Energy Integration",
     icon: CubeTransparentIcon, // Represents solar and renewable energy
