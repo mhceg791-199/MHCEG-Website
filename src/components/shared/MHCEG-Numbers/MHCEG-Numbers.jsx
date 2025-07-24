@@ -6,15 +6,15 @@ import useCountUp from "../../../hooks/useCountUp";
 function MHCEG_Numbers() {
   const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
   const oneHundred = useCountUp(100, inView, 6000);
-  const oneHundredFifty = useCountUp(150, inView, 8000);
+  const oneHundredFifty = useCountUp(200, inView, 8000);
   const ten = useCountUp(10, inView, 2000);
-  const twenty = useCountUp(25, inView, 4000);
+  const twenty = useCountUp(45, inView, 4000);
 
   const numbersDetails = [
     {
       number: twenty,
       icon: "+",
-      text: "Engineers",
+      text: "Employees",
     },
     {
       number: ten,
