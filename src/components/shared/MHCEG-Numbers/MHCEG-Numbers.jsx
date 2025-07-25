@@ -24,7 +24,7 @@ function MHCEG_Numbers() {
     {
       number: oneHundredFifty,
       icon: "+",
-      text: "Years of Expertise",
+      text: "Years Of Cumulative Experience",
     },
     {
       number: oneHundred,
