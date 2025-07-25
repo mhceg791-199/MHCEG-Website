@@ -252,7 +252,7 @@ function NavList() {
       />
       <Typography
         as="a"
-        href="/career"
+        href="/career-job"
         variant="paragraph"
         color="blue-gray"
         className="font-medium"
@@ -263,7 +263,7 @@ function NavList() {
       </Typography>
       <Typography
         as="a"
-        href="/contactUs"
+        href="/contact-us"
         variant="paragraph"
         color="blue-gray"
         className="font-medium"

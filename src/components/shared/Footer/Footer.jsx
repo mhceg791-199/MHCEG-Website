@@ -15,7 +15,7 @@ function Footer() {
         </div>
         <div className="md:col-span-5 col-span-1 flex md:items-start items-center flex-col justify-center  ">
           <p className="text-lg md:text-start text-center font-semibold space-x-2">
-            <Link to="/contactUs">Contact Us |</Link>
+            <Link to="/contact-us">Contact Us |</Link>
             <Link to="/privacy">Privacy Policy |</Link>
             <Link to="/terms">Terms & Conditions </Link>
           </p>

@@ -13,7 +13,7 @@ import Privacy from "./components/PrivacyPage/Privacy";
 import Terms from "./components/TermsAndConditions/Terms";
 import Blog from "./components/BlogsOfSustainability/Blog";
 import { Route, Routes } from "react-router-dom";
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Layout from "./Layout";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Career from "./components/Career/Career";
@@ -28,8 +28,8 @@ function App() {
     { path: "/industries", element: <Industries /> },
     { path: "/sustainability", element: <Sustainability /> },
     { path: "/sustainability/:slug", element: <Blog /> },
-    { path: "/career", element: <Career /> },
-    { path: "/contactUs", element: <ContactUs /> },
+    { path: "/career-job", element: <Career /> },
+    { path: "/contact-us", element: <ContactUs /> },
     { path: "/privacy", element: <Privacy /> },
     { path: "/terms", element: <Terms /> },
     { path: "/*", element: <NotFoundPage /> },
