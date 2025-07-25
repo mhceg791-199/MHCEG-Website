@@ -150,12 +150,12 @@ function NavListMenu({ ListMenuItems, headTitle }) {
   const renderItems = ListMenuItems.map(
     ({ icon, title, pageName, section }, key) => (
       <div onClick={() => handleNavigate(pageName, section)} key={key}>
-        <MenuItem className="flex items-center gap-3  rounded-lg">
+        <MenuItem className="flex items-center gap-3 !md:p-2 !p-1  rounded-lg">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50  p-2 ">
             {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
+              className: "md:h-6 h-2 text-gray-900  md:w-6 w-full",
             })}
           </div>
           <div>

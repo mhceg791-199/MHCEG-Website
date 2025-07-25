@@ -22,7 +22,7 @@ function Blog() {
 
         <div
           style={{ backgroundImage: `url(${blog.img})` }}
-          className="bg-no-repeat bg-fixed bg-contain bg-center w-full h-[60vh]"
+          className="bg-no-repeat md:bg-fixed bg-contain bg-center w-full md:h-[60vh] h-[35vh]"
         ></div>
 
         {blog.text.slice(1).map((paragraph, index) => (
