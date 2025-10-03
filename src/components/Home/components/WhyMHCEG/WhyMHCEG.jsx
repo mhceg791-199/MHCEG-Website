@@ -21,7 +21,7 @@ function WhyMHCEG() {
             <div
               key={index}
               data-aos="zoom-in-down"
-              className="flex items-center my-3"
+              className="flex items-center my-1"
             >
               <i className="fa-solid text-lg  fa-check pe-2"></i> <p>{point}</p>
             </div>

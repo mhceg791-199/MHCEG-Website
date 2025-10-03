@@ -6,8 +6,8 @@ function Career() {
   return (
     <>
       <FirstSection title={"Career"} image={"/career/career.webp"} />
-      <div className="grid md:grid-cols-2 grid-cols-1 md:w-3/4 w-full m-auto md:p-16 p-5 md:items-center">
-        <div className="col-span-1 text-mainColor">
+      <div className="grid grid-cols-1 md:w-3/4 w-full m-auto md:p-16 p-5 md:items-center">
+        <div className="col-span-1 text-mainColor md:mb-5">
           <p className="text-xxxl font-semibold leading-10">
             Join Our Team of Visionary Engineers 
           </p>
