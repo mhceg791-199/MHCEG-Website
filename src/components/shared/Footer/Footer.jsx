@@ -20,7 +20,7 @@ function Footer() {
             <Link to="/terms">Terms & Conditions </Link>
           </p>
           <p className="">
-            © 2024 Mosaic Holding Corporation , All rights reserved
+            © 2024 Mosaic Holding Corporation, All rights reserved
           </p>
         </div>
         <div className="md:col-span-3 col-span-1  justify-evenly  flex items-center">
