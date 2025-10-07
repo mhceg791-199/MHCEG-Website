@@ -20,9 +20,9 @@ function Industries() {
   useScrollToSection(refs);
   const industries = [
     {
-      title: "Architecture & Structural Engineering ",
+      title: "Architecture & Structural Engineering",
       paragraph:
-        "We design innovative, resilient structures from high-rises to seismic-resistant projects blending aesthetic vision with advanced engineering precision. ",
+        "We design innovative, resilient structures from high-rises to seismic-resistant projects, blending aesthetic vision with advanced engineering precision.",
       image: "/industries/1.webp",
       type: "1",
       sectionName: structural,
