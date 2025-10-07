@@ -28,7 +28,7 @@ function WhyMHCEG() {
           ))}
         </div>
         <div className="col-span-1 m-auto">
-          <img data-aos="fade-left" className="rounded-2xl" src="/home/whyMHCEG.webp" alt="" />
+          <img data-aos="fade-left" className="rounded-2xl" src="/home/whyMHCEG.webp" alt="Why MHCEG" />
         </div>
       </section>
     </>
