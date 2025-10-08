@@ -19,6 +19,22 @@ export default withMT({
         base: "clamp(calc(0.75rem * 0.94), calc(2vw * 0.94), calc(0.875rem * 0.94))", // Base is 85% of lg        
         sm: "clamp(0.375rem, 0.875vw, 0.375rem)", // Small text
       },
+      fontFamily: {
+      sans: [
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        '"Noto Sans"',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+      ],
+    },
     },
   },
   plugins: [],
