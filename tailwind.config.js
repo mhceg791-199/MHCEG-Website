@@ -20,21 +20,8 @@ export default withMT({
         sm: "clamp(0.375rem, 0.875vw, 0.375rem)", // Small text
       },
       fontFamily: {
-      sans: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
-      ],
-    },
+        sans: ['"Noto Sans"', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+      },
     },
   },
   plugins: [],
