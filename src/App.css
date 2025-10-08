@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
   h1 {
     @apply text-xxl font-bold;
   }
@@ -24,49 +24,16 @@
   section {
     @apply p-10;
   }
-} */
- @layer base {
-  h1 {
-    @apply text-xxxl font-bold; /* بدل text-xxl بـ text-xxxl */
-  }
-
-  h2 {
-    @apply text-xxl font-semibold;
-  }
-
-  h3 {
-    @apply text-xl font-semibold;
-  }
-
-  p {
-    @apply text-base;
-  }
-
-  li {
-    @apply text-base;
-  }
-
-  section {
-    @apply p-10;
-  }
 }
-
 .df {
   background-color: #217d829e;
-}
-
-:root {
-  --font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 html,
 body {
   overflow-x: hidden !important;
   width: 100% !important;
-}
-html, body, * {
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; */
-  font-family: var(--font-family);
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
