@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   h1 {
     @apply text-xxl font-bold;
   }
@@ -24,7 +24,33 @@
   section {
     @apply p-10;
   }
+} */
+ @layer base {
+  h1 {
+    @apply text-xxxl font-bold; /* بدل text-xxl بـ text-xxxl */
+  }
+
+  h2 {
+    @apply text-xxl font-semibold;
+  }
+
+  h3 {
+    @apply text-xl font-semibold;
+  }
+
+  p {
+    @apply text-base;
+  }
+
+  li {
+    @apply text-base;
+  }
+
+  section {
+    @apply p-10;
+  }
 }
+
 .df {
   background-color: #217d829e;
 }
