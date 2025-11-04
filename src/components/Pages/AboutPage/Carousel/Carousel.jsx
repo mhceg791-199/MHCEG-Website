@@ -70,7 +70,7 @@ function Carousel() {
   );
 }
 
-// الأسهم
+// arrows
 function SampleNextArrow({ onClick }) {
   return (
     <div

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import homeSlides from "../../../../data/homeSlider";
 import { useNavigate } from "react-router-dom";
 
-const SLIDE_DURATION = 6; 
+const SLIDE_DURATION = 6;
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0);
@@ -46,24 +46,39 @@ export default function HeroSlider() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-
       {/* ✅ الصورة أو الفيديو — تحميل خفيف */}
       {slide.type === "image" ? (
+        // <img
+        //   src={slide.src}
+        //   alt="mhceg slide"
+        //   loading="lazy"
+        //   decoding="async"
+        //   className="absolute inset-0 w-full h-full object-cover"
+        // />
         <img
           src={slide.src}
           alt="mhceg slide"
-          loading="lazy"
+          loading="eager"
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover"
         />
       ) : (
+        // <video
+        //   src={slide.src}
+        //   autoPlay
+        //   muted
+        //   loop
+        //   playsInline
+        //   preload="metadata"
+        //   className="absolute inset-0 w-full h-full object-cover"
+        // />
         <video
           src={slide.src}
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="none"
           className="absolute inset-0 w-full h-full object-cover"
         />
       )}
@@ -103,14 +118,14 @@ export default function HeroSlider() {
           {slide.desc}
         </motion.p>
 
-<div>
+        <div>
           <button
-          onClick={() => nav("/about")}
-          className="mt-8 btn-boder-white"
-        >
-          Explore Our Perspective →
-        </button>
-</div>
+            onClick={() => nav("/about")}
+            className="mt-8 btn-boder-white"
+          >
+            Explore Our Perspective →
+          </button>
+        </div>
       </div>
 
       {/* ✅ البار السفلي */}
@@ -132,7 +147,6 @@ export default function HeroSlider() {
           </div>
         ))}
       </div>
-
     </div>
   );
 }

@@ -37,7 +37,6 @@ function Blog() {
         {blog.text.slice(1).map((paragraph, index) => (
           <TitleWithList
             key={index}
-            // title={`Section ${index + 1}`}
             text={paragraph}
           />
         ))}
