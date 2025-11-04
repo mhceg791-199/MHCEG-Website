@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
+
+  /* h1 {
     @apply text-xxl font-bold;
   }
 
@@ -16,15 +17,49 @@
 
   p {
     @apply text-base;
-  }
+  } */
   li {
     @apply text-base;
   }
 
   section {
-    @apply p-10;
+    @apply  p-3 md:p-10;
   }
 }
+
+:root {
+  --mainColor: "#1a3442";
+  --mainLayer: "#1a3442e6";
+  --mainGold: #C5A363;
+  --lightGray: "#EDEDED"
+}
+.desc{
+  white-space: pre-line;
+
+}
+::selection {
+    background-color: rgba(60, 123, 157, 0.5);
+}
+
+
+@layer components {
+  .heading {
+    @apply text-lg sm:text-2xl md:text-3xl;
+  }
+
+  .paragraph {
+    @apply leading-relaxed text-sm sm:text-base md:text-lg
+  }
+  .btn-boder-white {
+    @apply px-6 py-3 border border-lightGray hover:bg-mainColor hover:text-lightGray transition duration-300
+  }
+
+  .btn-boder-blue {
+    @apply px-6 py-3 border-2 border-mainColor text-mainColor hover:bg-mainColor hover:text-white hover:border-lightGray transition duration-300
+  }
+}
+
+
 .df {
   background-color: #217d829e;
 }
