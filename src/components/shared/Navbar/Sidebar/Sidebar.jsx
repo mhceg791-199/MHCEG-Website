@@ -152,7 +152,7 @@ export function SidebarWithBurgerMenu() {
                       open === 1 ? "text-mainGold" : ""
                     }`}
                   >
-                    <i className="fa-solid fa-hand-holding-dollar text-xl pe-2"></i> SERVICE {" "}
+                    <i className="fa-solid fa-hand-holding-dollar text-xl pe-2"></i> SERVICES {" "}
                   </Typography>
                 </AccordionHeader>
               </ListItem>
