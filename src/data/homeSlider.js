@@ -1,7 +1,7 @@
-import img1 from "../assets/Home/slider/s1.jpg"
-import img2 from "../assets/Home/slider/s2.jpg"
-import vid1 from "../assets/Home/slider/sv1.mp4"
-import vid2 from "../assets/Home/slider/sv2.mp4"
+import img1 from "../assets/Home/slider/s1.webp"
+import img2 from "../assets/Home/slider/s2.webp"
+import vid1 from "../assets/Home/slider/sv1.webm"
+import vid2 from "../assets/Home/slider/sv2.webm"
 
 
 const homeSlides = [

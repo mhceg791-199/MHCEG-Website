@@ -1,8 +1,8 @@
 import generateSlug from "../Functions/generateSlug";
 import logo from '../../assets/about/sustainability/logo.webp';
-import p1 from '../../assets/about/sustainability/3.jpg';
-import p2 from '../../assets/about/sustainability/1.jpg';
-import p3 from '../../assets/about/sustainability/2.jpg';
+import p1 from '../../assets/about/sustainability/3.webp';
+import p2 from '../../assets/about/sustainability/1.webp';
+import p3 from '../../assets/about/sustainability/2.webp';
 import p4 from '../../assets/about/sustainability/5.webp';
 
 

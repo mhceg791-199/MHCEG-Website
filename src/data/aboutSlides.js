@@ -1,6 +1,6 @@
-import s1 from '../assets/about/sustainability/3.jpg';
-import s2 from '../assets/about/sustainability/1.jpg';
-import s3 from '../assets/about/sustainability/2.jpg';
+import s1 from '../assets/about/sustainability/3.webp';
+import s2 from '../assets/about/sustainability/1.webp';
+import s3 from '../assets/about/sustainability/2.webp';
 import s4 from '../assets/about/sustainability/5.webp';
 
 
