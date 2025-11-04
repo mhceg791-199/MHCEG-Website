@@ -1,78 +1,46 @@
-import React, { useRef } from "react";
-import FirstSection from "../shared/FirstSection/FirstSection";
+import { useRef } from "react";
 import IndustryItem from "./components/industryItem";
 import useScrollToSection from "../../hooks/useScrollToSection";
+import FirstSectionByVideo from "../shared/FirstSectionByVideo/FirstSectionByVideo";
+import DescriptionAbout from "../shared/DescriptionAbout/DescriptionAbout";
+import industries from "../../data/industries";
 
 function Industries() {
-  const structural = useRef(null); // Add reference for Management section
-  const urban = useRef(null); // Add reference for Management section
-  const energy = useRef(null); // Add reference for Management section
-  const oil = useRef(null); // Add reference for Management section
-  const environmental = useRef(null); // Add reference for Management section
+  const structural = useRef(null);
+  const urban = useRef(null);
+  const energy = useRef(null);
+  const oil = useRef(null);
+  const environmental = useRef(null);
 
-  const refs = {
-    structural,
-    urban,
-    energy,
-    oil,
-    environmental,
-  };
+  const refs = { structural, urban, energy, oil, environmental };
   useScrollToSection(refs);
-  const industries = [
-    {
-      title: "Architecture & Structural Engineering",
-      paragraph:
-        "We design innovative, resilient structures from high-rises to seismic-resistant projects, blending aesthetic vision with advanced engineering precision.",
-      image: "/industries/1.webp",
-      type: "1",
-      sectionName: structural,
-    },
-    {
-      title: "Urban Design & Infrastructure",
-      paragraph:
-        "Our smart city solutions optimize urban growth through efficient transportation networks, resilient bridges, and flood-resistant infrastructure. ",
-      image: "/industries/2.webp",
-      type: "2",
-      sectionName: urban,
-    },
-    {
-      title: "Energy & Power Generation",
-      paragraph:
-        "We deliver renewable energy systems and grid optimizations that balance sustainability with high-performance efficiency. ",
-      image: "/industries/3.webp",
-      type: "1",
-      sectionName: energy,
-    },
-    {
-      title: " Oil & Gas Engineering",
-      paragraph:
-        "Specialized pipeline, facility, and automation solutions ensure operational excellence, safety, and regulatory compliance. ",
-      image: "/industries/4.webp",
-      type: "2",
-      sectionName: oil,
-    },
-    {
-      title: "Sustainability & Green Solutions ",
-      paragraph:
-        "Carbon reduction strategies, green certifications, and smart energy systems drive eco-efficient, future-ready developments. ",
-      image: "/industries/5.webp",
-      type: "1",
-      sectionName: environmental,
-    },
+
+  const paragraphs = [
+    "At MHCEG, we work across industries that shape economies and improve lives — providing integrated architecture, engineering, and management solutions from concept to completion.",
   ];
+
   return (
     <>
-      <FirstSection
-        title={"OUR INDUSTRIES"}
-        image={"/industries/industries.webp"}
+      <FirstSectionByVideo title="Our Industries" />
+      <DescriptionAbout
+        id="Industries-mhceg"
+        firstWord="Industries "
+        secondWord=""
+        paragraphs={paragraphs}
+        particleColors={["#1a3442", "#1a3442"]}
+        height="h-[40vh]"
       />
-      {industries.map((industry, index) => (
-        <React.Fragment key={index}>
-          <div ref={industry.sectionName}>
+      <div className="bg-[#0e1b22]">
+        {industries.map((industry, index) => (
+          <div
+            key={index}
+            ref={industry.sectionName}
+            className="border-b border-white/10"
+          >
             <IndustryItem industry={industry} />
           </div>
-        </React.Fragment>
-      ))}
+        ))}
+      </div>
     </>
   );
 }
