@@ -1,10 +1,10 @@
 import FirstSectionByVideo from "../shared/FirstSectionByVideo/FirstSectionByVideo";
 import DescriptionAbout from "../shared/DescriptionAbout/DescriptionAbout";
-// import MissionSection from "../Pages/AboutPage/MissionSection/MissionSection";
-// import FirstSectionByImage from "../shared/FirstSectionByImage/FirstSectionByImage";
-// import missionImage from "../../assets/about/mission/about.webp";
-// import Values from "../Pages/AboutPage/Values/Values";
-// import CarouselSection from "../Pages/AboutPage/Carousel/CarouselSection";
+import MissionSection from "../Pages/AboutPage/MissionSection/MissionSection";
+import FirstSectionByImage from "../shared/FirstSectionByImage/FirstSectionByImage";
+import missionImage from "../../assets/about/mission/about.webp";
+import Values from "../Pages/AboutPage/Values/Values";
+import CarouselSection from "../Pages/AboutPage/Carousel/CarouselSection";
 
 function About() {
   const paragraphs = [
@@ -37,7 +37,7 @@ function About() {
         paragraphs4={paragraphs4}
         particleColors={["#1a3442", "#1a3442"]}
         height="h-[120vh] md:h-[65vh]"
-      /> {/*
+      /> 
       <MissionSection />
 
       <div className="mt-16">
@@ -60,7 +60,7 @@ function About() {
           We envision a future where connection drives progress, and every project becomes a catalyst for sustainable growth and human advancement.`}
       />
       <Values />
-      <CarouselSection /> */}
+      <CarouselSection /> 
     </>
   );
 }

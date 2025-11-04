@@ -1,6 +1,9 @@
-import  { useContext, useEffect, useState } from "react";
+
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { sustainabilityContext } from "../../context/sustainabilityContext";
+import FirstSectionDetailss from "../shared/FirstSectionDetailss/FirstSectionDetailss";
+import TitleWithList from "../shared/TitleWithList/TitleWithList";
 
 function Blog() {
   const { slug } = useParams();
@@ -9,24 +12,34 @@ function Blog() {
 
   useEffect(() => {
     setBlog(getSustainBySlug(slug));
-    window.scrollTo(0, 0); // ✅ Ensure the page scrolls to the top when the slug changes
-  }, [slug]); // 🔥 Dependency array includes slug to trigger re-fetch
+    window.scrollTo(0, 0);
+  }, [slug]);
 
-  if (!blog) return <p>Loading...</p>; // ✅ Show a loading state while fetching data
+  if (!blog)
+    return (
+      <div className="flex justify-center items-center h-screen text-gray-500">
+        Loading...
+      </div>
+    );
+
+  const FirstDetails = {
+    poster: blog.poster,
+    logo: blog.logo,
+    title: { firstWord: blog.title, secondWord: "" },
+    text: blog.text[0],
+  };
 
   return (
-    <div className="bg-mainColor text-white w-full h-full py-20">
-      <div className="w-3/4 m-auto">
-        <h1 className="mt-10 mb-10 text-center">{blog.title}</h1>
-        <p className="my-7">{blog.text[0]}</p>
-
-        <div
-          style={{ backgroundImage: `url(${blog.img})` }}
-          className="bg-no-repeat md:bg-fixed bg-contain bg-center w-full md:h-[60vh] h-[35vh]"
-        ></div>
-
+    <div>
+      <FirstSectionDetailss data={FirstDetails} />
+      
+      <div className="max-w-7xl mx-auto px-6 mb-8 space-y-8 md:translate-y-[-32%]">
         {blog.text.slice(1).map((paragraph, index) => (
-          <p key={index} className="my-7">{paragraph}</p>
+          <TitleWithList
+            key={index}
+            // title={`Section ${index + 1}`}
+            text={paragraph}
+          />
         ))}
       </div>
     </div>

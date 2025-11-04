@@ -1,27 +1,35 @@
 import generateSlug from "../Functions/generateSlug";
+import logo from '../../assets/about/sustainability/logo.webp';
+import p1 from '../../assets/about/sustainability/3.jpg';
+import p2 from '../../assets/about/sustainability/1.jpg';
+import p3 from '../../assets/about/sustainability/2.jpg';
+import p4 from '../../assets/about/sustainability/5.webp';
+
 
 const sustainabilitiesData = [
   {
-    img: "/sustainability/1.webp",
+    logo: logo,
+    poster: p1,
     title: "Green Building Technologies",
     slug: generateSlug("Green Building Technologies"),
     text: [
-      "Green building technologies are transforming modern construction by seamlessly integrating sustainability with high-performance design. At MHCEG, we pioneer cutting-edge solutions that minimize environmental impact while optimizing building efficiency. Through advanced materials, intelligent automation, and energy-conscious architecture, we help clients reduce operational costs, streamline energy use, and exceed regulatory standards—delivering lasting value for both enterprises and communities.",
-      "The foundation of green buildings lies in innovative materials. We utilize recycled steel, low-carbon concrete, and engineered timber to reduce emissions without compromising strength. Our experts meticulously select high-performance insulation, such as aerogel and spray foam, to maximize thermal efficiency—slashing energy demands while enhancing occupant comfort. Every material is chosen for its durability, cost-effectiveness, and alignment with circular economy principles.",
-      "Intelligent systems are revolutionizing building performance. Our integrated solutions—from AI-driven climate control to occupancy-responsive lighting—dynamically adjust energy use based on real-time data. These technologies not only cut costs but also future-proof buildings against evolving sustainability benchmarks. MHCEG ensures seamless implementation, marrying innovation with practicality for effortless, long-term efficiency.",
-      "Beyond the building envelope, we deploy biophilic designs like green roofs and vertical gardens to combat urban heat, improve air quality, and reduce stormwater runoff. Water-smart landscaping, including rain gardens and precision irrigation, further conserves resources. By harmonizing aesthetics with ecology, we create spaces that are as sustainable as they are visually compelling.",
+      "Green building technologies are transforming modern construction by seamlessly integrating sustainability with high performance design. At MHCEG, we pioneer cutting-edge solutions that minimize environmental impact while optimizing building efficiency. Through advanced materials, intelligent automation, and energy-conscious architecture, we help clients reduce operational costs, streamline energy use, and exceed regulatory standards delivering lasting value for both enterprises and communities. ",
+      "The foundation of green buildings lies in innovative materials. We utilize recycled steel, low-carbon concrete, and engineered timber to reduce emissions without compromising strength. Our experts meticulously select high performance insulation like aerogel and spray foam to maximize thermal efficiency, slashing energy demands while enhancing occupant comfort. Every material is chosen for its durability, cost-effectiveness, and alignment with circular economy principles. ",
+      "Intelligent systems are revolutionizing building performance. Our integrated solutions from AI-driven climate control to occupancy-responsive lighting dynamically adjust energy use based on real-time data. These technologies not only cut costs but also future-proof buildings against evolving sustainability benchmarks. MHCEG ensures seamless implementation, marrying innovation with practicality for effortless, long-term efficiency. ",
+      "Beyond the building envelope, we deploy biophilic designs like green roofs and vertical gardens to combat urban heat, improve air quality, and reduce stormwater runoff. Water-smart landscaping, including rain gardens and precision irrigation, further conserves resources. By harmonizing aesthetics with ecology, we create spaces that are as sustainable as they are visually compelling. ",
     ],
   },
   {
-    img: "/sustainability/2.webp",
+    logo: logo,
+    poster: p2,
     title: "Carbon Reduction Programs",
     slug: generateSlug("Carbon Reduction Programs"),
 
     text: [
-      "Carbon reduction programs are critical for industries committed to environmental stewardship and sustainable growth. At MHCEG, we engineer tailored solutions that reduce greenhouse gas (GHG) emissions through energy optimization, regulatory alignment, and strategic carbon offsetting. Our end-to-end approach—encompassing energy audits, emissions assessments, and sustainable retrofits—ensures clients achieve compliance while boosting operational efficiency and long-term resilience.",
-      "The cornerstone of emissions reduction lies in advanced energy systems. We implement high-efficiency HVAC, smart LED networks, and AI-driven automation to dramatically cut consumption. Our engineers conduct granular energy diagnostics to pinpoint waste and deploy targeted upgrades. For deeper impact, we facilitate transitions to renewable power (solar, wind, and hybrid systems), slashing both costs and carbon footprints while future-proofing operations against energy volatility.",
-      "With evolving global standards—from carbon pricing to mandatory ESG reporting—compliance is both a challenge and an opportunity. MHCEG demystifies frameworks like the Paris Agreement and Emissions Trading Systems (ETS), helping clients develop proactive carbon management plans. We streamline certification processes (LEED, BREEAM, ISO 14064) and transform regulatory requirements into competitive advantages.",
-      "True sustainability extends to voluntary action. We advise on high-impact offset initiatives—from afforestation to carbon capture technologies—that neutralize emissions while supporting biodiversity and community development. By aligning these efforts with corporate values, we help clients build reputational equity and position themselves as pioneers in the low-carbon economy.",
+      "Carbon reduction programs are critical for industries committed to environmental stewardship and sustainable growth. At MHCEG, we engineer tailored solutions that reduce greenhouse gas (GHG) emissions through energy optimization, regulatory alignment, and strategic carbon offsetting. Our end-to-end approach encompassing energy audits, emissions assessments, and sustainable retrofits ensures clients achieve compliance while boosting operational efficiency and long-term resilience. ",
+      "The cornerstone of emissions reduction lies in advanced energy systems. We implement high-efficiency HVAC, smart LED networks, and AI-driven automation to dramatically cut consumption. Our engineers conduct granular energy diagnostics to pinpoint waste and deploy targeted upgrades. For deeper impact, we facilitate transitions to renewable power (solar, wind, and hybrid systems), slashing both costs and carbon footprints while future-proofing operations against energy volatility. ",
+      "With evolving global standards from carbon pricing to mandatory ESG reporting compliance is both a challenge and an opportunity. MHCEG demystifies frameworks like the Paris Agreement and emissions trading systems (ETS), helping clients develop proactive carbon management plans. We streamline certification processes (LEED, BREEAM, ISO 14064) and transform regulatory requirements into competitive advantages. ",
+      "True sustainability extends to voluntary action. We advise on high-impact offset initiatives from afforestation to carbon capture technologies that neutralize emissions while supporting biodiversity and community development. By aligning these efforts with corporate values, we help clients build reputational equity and position themselves as pioneers in the low-carbon economy. ",
     ],
   },
   // {
@@ -36,7 +44,8 @@ const sustainabilitiesData = [
   //   ],
   // },
   {
-    img: "/sustainability/4.webp",
+    logo: logo,
+    poster: p3,
     title: "Renewable Energy Integration",
     slug: generateSlug("Renewable Energy Integration"),
     text: [
@@ -47,7 +56,8 @@ const sustainabilitiesData = [
     ],
   },
   {
-    img: "/sustainability/5.webp",
+    logo: logo,
+    poster: p4,
     title: "Sustainable Water Management",
     slug: generateSlug("Sustainable Water Management"),
     text: [
