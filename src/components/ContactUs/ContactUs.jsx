@@ -1,36 +1,26 @@
-import React from "react";
 import Map from "./components/map/Map";
-import Form from "./components/form/Form";
-import ContactInformation from "./components/contactInformation/ContactInformation";
+import FirstSectionByVideo from "../shared/FirstSectionByVideo/FirstSectionByVideo";
+import ContactForm from "./components/ContactForm/ContactForm";
+import ContactMapDetails from "./components/ContactMapDetails/ContactMapDetails";
 function ContactUs() {
   return (
     <>
-      <div className="bg-mainColor">
-        <img
-          className="h-[80vh] object-cover w-full"
-          src="/contactUs/contactUs.webp"
-          alt=""
-        />
-
-        <div className="text-center mt-20 text-white">
-          <h1 className="text-base">CONTACT US</h1>
-          <p className="text-xxxl font-semibold">Get in touch!</p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-12 grid-cols-1">
-          <div className="col-span-1">
-            <Form />
-          </div>
-          <div className="col-span-1 flex items-center justify-center">
-            <ContactInformation />
+      <FirstSectionByVideo title="Contact Us" />
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mt-10 text-black px-6 md:px-16 items-start">
+        <div className="w-full flex justify-center md:justify-end">
+          <div className="w-full md:w-10/12">
+            <ContactForm />
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 md:h-screen mt-10 md:mt- text-black items-center md:px-10">
-          <div className="col-span-2">
-            <Map />
+        <div className="w-full flex justify-center md:justify-start">
+          <div className="w-full md:w-10/12">
+            <ContactMapDetails />
           </div>
         </div>
       </div>
+
+      <Map />
     </>
   );
 }

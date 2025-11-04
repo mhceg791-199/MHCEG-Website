@@ -1,22 +1,27 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import TitleWithList from "../shared/PrivacyAndTerms/TitleWithList";
-import FirstSection from "../shared/PrivacyAndTerms/FirstSection";
-
+import DescriptionAbout from "../shared/DescriptionAbout/DescriptionAbout";
 
 function Privacy() {
+  const paragraphs = [
+    "Mosaic Holding Corporation (MHC) is committed to safeguarding the privacy and security of all personal data collected in the course of our operations. This Privacy Policy outlines our protocols for collecting, using, storing, and disclosing personal information, in alignment with applicable data protection regulations. By engaging with our services, you acknowledge and consent to the terms outlined.",
+  ];
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <FirstSection
-        firstWord="PRIVACY"
-        secondWord="POLICY"
-        paragraph="Mosaic Holding Corporation (MHC) is committed to safeguarding the privacy and security of all personal data collected in 
-          the course of our operations. This Privacy Policy outlines our protocols for collecting, using, storing, and disclosing personal 
-          information, in alignment with applicable data protection regulations. By engaging with our services, you acknowledge 
-          and consent to the terms outlined."
-      />
+      <div className="mt-[2.5rem] md:mt-[4.5rem]">
+        <DescriptionAbout
+          id="PRIVACY-mhc"
+          firstWord="Privacy"
+          secondWord="Policy"
+          paragraphs={paragraphs}
+          particleColors={["#1a3442", "#1a3442"]}
+          height="h-[50vh]"
+        />
+      </div>
+
       <div className="md:px-20 px-5">
         <TitleWithList
           title="INFORMATION COLLECTION"
@@ -41,7 +46,7 @@ Information we may gather includes, but is not limited to:"
 or destruction. This includes encryption protocols, secure data storage, and stringent access controls."
         />
         <TitleWithList
-          title="DATA SHARING AND DISCLOUSRE"
+          title="DATA SHARING AND DISCLOSURE"
           text="MHC respects your privacy and does not share personal information with unaffiliated third parties except as outlined in this policy. Data may be shared under the following conditions:"
           list={[
             "Service Providers: Trusted partners that assist us in delivering our services, under strict confidentiality agreements.",
@@ -54,7 +59,7 @@ or destruction. This includes encryption protocols, secure data storage, and str
           text="Personal data is retained only for as long as is necessary to fulfill the purposes outlined in this policy or as required by law. Once the data is no longer needed, it is securely disposed of to prevent unauthorized access."
         />
         <TitleWithList
-          title="CHARGES TO THIS DATA POLICY"
+          title="CHANGES TO THIS PRIVACY POLICY"
           text="MHC reserves the right to amend this Privacy Policy to reflect changes in our practices, regulatory requirements, or other operational considerations. All updates will be published on our website, with the 'Last Updated' date indicating the most recent revisions."
         />
         <TitleWithList
@@ -68,5 +73,3 @@ Officer via the contact information provided on our official website."
 }
 
 export default Privacy;
-
-
