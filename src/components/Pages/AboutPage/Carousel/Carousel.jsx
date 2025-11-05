@@ -38,7 +38,7 @@ function Carousel() {
         <Slider {...settings}>
           {aboutSlides.map((item, i) => (
             <div key={i} className="p-2">
-              <div className="relative h-[70vh] md:h-[75vh] rounded-3xl overflow-hidden">
+              <div className="relative h-[67vh] md:h-[75vh] rounded-3xl overflow-hidden">
                 <img
                   src={item.logo}
                   alt={item.title}
