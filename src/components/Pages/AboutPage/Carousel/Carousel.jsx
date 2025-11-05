@@ -33,7 +33,7 @@ function Carousel() {
   };
 
   return (
-    <div className="w-full flex justify-center items-center py-8 ">
+    <div className="w-full flex justify-center items-center py-2 md:py-8 ">
       <div className="w-[95%] md:w-[92%] lg:w-[90%] border-2 rounded-3xl  border-lightGray p-7">
         <Slider {...settings}>
           {aboutSlides.map((item, i) => (

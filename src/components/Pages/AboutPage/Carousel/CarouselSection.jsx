@@ -5,7 +5,7 @@ const LazyCarousel = lazy(() => import("./Carousel"));
 function CarouselSection() {
   return (
     <>
-      <div className={`text-center md:text-start md:ms-20 md:pt-6 my-6`}>
+      <div className={`text-center md:text-start md:ms-20 md:pt-6 my-3 md:my-6`}>
         <SectionHeader firstWord={"Sustainability & Innovation"} />
       </div>
       <div className="flex items-center justify-center md:my-10 h-[600px] w-full">
