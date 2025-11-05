@@ -7,7 +7,7 @@ const linksTop = [
   { to: "/service", label: "Services" },
   { to: "/industries", label: "Industries" },
   { to: "/people", label: "Careers" },
-  { to: "/News", label: "News" },
+  // { to: "/News", label: "News" },
 ];
 
 const linksBottom = [
