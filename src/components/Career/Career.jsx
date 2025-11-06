@@ -15,7 +15,7 @@ function Career() {
 
       <DescriptionAbout
         id="Careers"
-        firstWord="Join Our Team Of "
+        firstWord="Join Our Team of "
         secondWord="Visionary Engineers"
         paragraphs={paragraphs}
         particleColors={["#1a3442", "#1a3442"]}
