@@ -19,7 +19,7 @@ function Career() {
         secondWord="Visionary Engineers"
         paragraphs={paragraphs}
         particleColors={["#1a3442", "#1a3442"]}
-        height="h-[40vh]"
+        height="h-[20vh] md:h-[40vh]"
       />
       <Values />
       <ReadyToJoin />

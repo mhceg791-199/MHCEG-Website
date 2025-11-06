@@ -18,7 +18,7 @@ function Privacy() {
           secondWord="Policy"
           paragraphs={paragraphs}
           particleColors={["#1a3442", "#1a3442"]}
-          height="h-[50vh]"
+          height="h-[35vh] md:h-[50vh]"
         />
       </div>
 

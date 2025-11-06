@@ -28,7 +28,7 @@ function Industries() {
         secondWord=""
         paragraphs={paragraphs}
         particleColors={["#1a3442", "#1a3442"]}
-        height="h-[40vh]"
+        height="h-[25vh] md:h-[40vh]"
       />
       <div className="bg-[#0e1b22]">
         {industries.map((industry, index) => (

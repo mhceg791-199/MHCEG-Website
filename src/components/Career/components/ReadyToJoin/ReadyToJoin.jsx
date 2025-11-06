@@ -34,7 +34,7 @@ function ReadyToJoin() {
       ></motion.div>
 
       {/* 🔹 المحتوى */}
-      <div className="relative z-10 w-3/4 mx-auto text-center py-8">
+      <div className="relative z-10 w-3/4 mx-auto text-center md:py-8">
         <div className="m-auto my-6">
           <SectionHeader firstWord="Ready to " secondWord="Build Tomorrow?" />
         </div>

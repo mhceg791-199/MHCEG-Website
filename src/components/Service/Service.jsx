@@ -23,7 +23,7 @@ export default function Service () {
         secondWord="Seamless Delivery"
         paragraphs={paragraphs}
         particleColors={["#1a3442", "#1a3442"]}
-        height="h-[50vh]"
+        height="h-[40vh] md:h-[50vh]"
       />
 
       <ServiceOfferings  />

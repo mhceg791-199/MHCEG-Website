@@ -36,7 +36,7 @@ function About() {
         paragraphs3={paragraphs3}
         paragraphs4={paragraphs4}
         particleColors={["#1a3442", "#1a3442"]}
-        height="h-[120vh] md:h-[65vh]"
+        height="h-[85vh] md:h-[65vh]"
       /> 
       <MissionSection />
 
@@ -45,7 +45,7 @@ function About() {
           imgSrc={missionImage}
           title="MISSION"
           overlayColor="bg-black/70"
-          height="h-[60vh]"
+          height="h-[40vh] md:h-[60vh]"
           description={`To engineer transformative solutions that merge global expertise with local adaptability, delivering designs and systems that are technically advanced, creatively inspired, and tailored to each market’s realities.\n
             We build with agility, precision, and purpose — redefining how engineering connects with people, cities, and industries.`}
         />
@@ -55,7 +55,7 @@ function About() {
         imgSrc=""
         title="VISION"
         overlayColor="bg-black/60"
-        height="h-[60vh]"
+        height="h-[37vh] md:h-[60vh]"
         description={`To set a new benchmark for engineering consultancies in the Middle East — one that unites innovation, creativity, and cultural intelligence under a single model of excellence.\n
           We envision a future where connection drives progress, and every project becomes a catalyst for sustainable growth and human advancement.`}
       />
