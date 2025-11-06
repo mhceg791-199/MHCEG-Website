@@ -17,7 +17,9 @@ export default function LeadershipSection() {
       text: "Every detail we design and every process we manage reflects an uncompromising commitment to protecting people, quality, and the environments we build within.",
     },
     {
-      icon: <FaHardHat className="text-4xl" style={{ color: colors.mainGold }} />,
+      icon: (
+        <FaHardHat className="text-4xl" style={{ color: colors.mainGold }} />
+      ),
       title: "Technological Innovation",
       head: "Innovation isn’t an option — it’s our foundation.",
       text: "We integrate intelligent systems, digital engineering, and creative thinking to push boundaries, enhance precision, and shape the next generation of sustainable design.",
@@ -32,11 +34,9 @@ export default function LeadershipSection() {
       }}
     >
       <div className="w-full max-w-7xl text-center">
-        
-
-        <SectionHeader firstWord={"Built on Safety, Driven by Innovation"} />
-
-      
+        <div className="mt-5">
+          <SectionHeader firstWord={"Built on Safety, Driven by Innovation"} />
+        </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 mt-10 text-center">
           <div className="group relative p-6 md:p-10 w-full max-w-[480px] rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg transition-all duration-500 hover:scale-[1.05] hover:bg-white/20">
             <div className="text-mainGold text-5xl mb-5 flex justify-center group-hover:rotate-12 transition-transform duration-500">
@@ -45,9 +45,7 @@ export default function LeadershipSection() {
             <h3 className="text-2xl font-bold mb-3 text-mainGold">
               {cards[0].title}
             </h3>
-            <h5 className="text-xl font-semibold mb-1">
-              {cards[0].head}
-            </h5>
+            <h5 className="text-xl font-semibold mb-1">{cards[0].head}</h5>
             <p className="text-gray-300 leading-relaxed">{cards[0].text}</p>
             <span className="absolute inset-0 rounded-2xl border-2 border-mainGold opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </div>
@@ -69,9 +67,7 @@ export default function LeadershipSection() {
             <h3 className="text-2xl font-semibold mb-3 text-mainGold">
               {cards[1].title}
             </h3>
-            <h5 className="text-lg font-semibold mb-1">
-              {cards[1].head}
-            </h5>
+            <h5 className="text-lg font-semibold mb-1">{cards[1].head}</h5>
             <p className="text-gray-300 leading-relaxed">{cards[1].text}</p>
             <span className="absolute inset-0 rounded-2xl border-2 border-mainGold opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </div>
@@ -80,4 +76,3 @@ export default function LeadershipSection() {
     </section>
   );
 }
-
