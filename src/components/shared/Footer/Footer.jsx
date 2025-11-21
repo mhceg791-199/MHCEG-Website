@@ -20,7 +20,7 @@ function Footer() {
   return (
     <footer className="grid md:grid-cols-10 grid-cols-1 px-5 py-3 gap-5 bg-mainColor text-white">
       
-      {/* Logo */}
+      {/* Logo */} 
       <div className="md:col-span-2 flex justify-center items-center lg:px-8">
         <Link to="/" className="block">
           <img
