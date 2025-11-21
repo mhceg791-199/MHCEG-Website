@@ -33,7 +33,7 @@ function App() {
     { path: "/industries", element: <Industries /> },
     { path: "/sustainability", element: <Sustainability /> },
     { path: "/sustainability/:slug", element: <Blog /> },
-    { path: "/people", element: <Career /> },
+    { path: "/career", element: <Career /> },
     { path: "/contact-us", element: <ContactUs /> },
     { path: "/news", element: <NewsPage /> },
     { path: "/terms", element: <Terms /> },

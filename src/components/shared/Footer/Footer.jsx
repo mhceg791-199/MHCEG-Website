@@ -6,7 +6,7 @@ const linksTop = [
   { to: "/about", label: "About" },
   { to: "/service", label: "Services" },
   { to: "/industries", label: "Industries" },
-  { to: "/people", label: "Careers" },
+  { to: "/career", label: "Careers" },
   // { to: "/News", label: "News" },
 ];
 
