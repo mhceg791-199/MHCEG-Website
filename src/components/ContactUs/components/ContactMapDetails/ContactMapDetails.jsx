@@ -24,7 +24,7 @@ function ContactMapDetails() {
               rel="noopener noreferrer"
               className="text-gray-400 text-md hover:text-mainGold transition-colors duration-300"
             >
-              13 Cleopatra St., Heliopolis, Cairo, Egypt
+              11 Cleopatra St., Heliopolis, Cairo, Egypt
             </a>
           </div>
         </div>
