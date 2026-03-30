@@ -23,7 +23,7 @@ export default function ApplicationForm() {
   } = useApplicationForm();
 
   return (
-    <section id="application-form-section" className="py-20 bg-gray-50 scroll-mt-24">
+    <section id="application-form-section" className="py-20 bg-gray-50 scroll-mt-16">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
