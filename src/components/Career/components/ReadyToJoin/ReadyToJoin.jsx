@@ -1,14 +1,20 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import { motion } from "framer-motion";
 import CareerModal from "./BriefCareer/CareerModel/CareerModel";
-import { careerModalContext } from "../../../../context/careerContext";
+// import { careerModalContext } from "../../../../context/careerContext";
 import SectionHeader from "../../../shared/PrivacyAndTerms/sectionHeader/sectionHeader";
 import Paragraph from "../../../shared/Paragraph/Paragraph";
 
 function ReadyToJoin() {
-  const { setOpen } = useContext(careerModalContext);
-  const openModal = () => {
-    setOpen(true);
+  // const { setOpen } = useContext(careerModalContext);
+  // const openModal = () => {
+  //   setOpen(true);
+  // };
+  const scrollToApplication = () => {
+    const element = document.getElementById("application-form-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (
@@ -45,7 +51,8 @@ function ReadyToJoin() {
 
         <div className="text-center mt-8">
           <button
-            onClick={openModal}
+            // onClick={openModal}
+            onClick={scrollToApplication}
             className="btn-boder-white"
           >
             JOIN OUR TEAM

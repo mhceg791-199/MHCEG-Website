@@ -1,7 +1,8 @@
 import ReadyToJoin from "./components/ReadyToJoin/ReadyToJoin";
 import DomeGallery from "../Pages/CareerPage/DomeGallery/DomeGallery";
 import DescriptionAbout from "../shared/DescriptionAbout/DescriptionAbout";
-import Values from "../Pages/AboutPage/Values/Values";
+// import Values from "../Pages/AboutPage/Values/Values";
+import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 
 function Career() {
   const paragraphs = [
@@ -21,8 +22,9 @@ function Career() {
         particleColors={["#1a3442", "#1a3442"]}
         height="h-[20vh] md:h-[40vh]"
       />
-      <Values />
+      {/* <Values /> */}
       <ReadyToJoin />
+      <ApplicationForm/>
     </>
   );
 }
