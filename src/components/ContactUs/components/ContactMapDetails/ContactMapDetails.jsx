@@ -19,7 +19,7 @@ function ContactMapDetails() {
           <div>
             <h4 className="text-lg font-semibold">Address</h4>
             <a
-              href="https://www.google.com/maps/place/MHCEG+Consultancy/@30.0888561,31.3262133,17z/data=!3m1!4b1!4m6!3m5!1s0x14583f00385c6f7d:0xc14c2ea2f238ae91!8m2!3d30.0888561!4d31.3262133!16s%2Fg%2F11zhtvm_p5!17m2!4m1!1e3!18m1!1e1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/30%C2%B002'44.3%22N+31%C2%B020'51.8%22E/@30.0456371,31.3451538,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.0456371!4d31.3477287?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxNy4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 text-md hover:text-mainGold transition-colors duration-300"
@@ -28,7 +28,6 @@ function ContactMapDetails() {
             </a>
           </div>
         </div>
-        
 
         {/* Email */}
         <div className="flex items-start gap-4 mt-5">
