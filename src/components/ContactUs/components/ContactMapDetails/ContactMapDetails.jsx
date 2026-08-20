@@ -24,7 +24,7 @@ function ContactMapDetails() {
               rel="noopener noreferrer"
               className="text-gray-400 text-md hover:text-mainGold transition-colors duration-300"
             >
-              11 Cleopatra St., Heliopolis, Cairo, Egypt
+              62 Ahmed Al-Zomor St, Al-Safwa Tower, 8th Floor, Nasr City, Cairo, Egypt
             </a>
           </div>
         </div>
