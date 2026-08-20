@@ -28,6 +28,7 @@ function ContactMapDetails() {
             </a>
           </div>
         </div>
+        
 
         {/* Email */}
         <div className="flex items-start gap-4 mt-5">
